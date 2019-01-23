@@ -228,5 +228,4 @@ insert into hs_product_type values
   (null,'波轮洗衣机',8,'pic_i.png'),
   (null,'洗烘一体机',8,'pic_i.png'),
   (null,'变频洗衣机',8,'pic_i.png'),
-  (null,'变频洗衣机',8,'pic_i.png'),
   (null,'居家爆款',8,'pic_i.png');
