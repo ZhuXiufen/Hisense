@@ -1,0 +1,40 @@
+body{
+    font-size:14px;
+    font-family: PingFangSC-Regular,"Microsoft YaHei",simsun,
+                 "Helvetica Neue",Arial,Helvetica,sans-serif
+}
+/* 承诺图片 */
+div.footer>div.promise{
+    margin:0 auto;
+    width: 1188px;
+    margin-bottom:30px;
+    display:flex;
+    justify-content: space-around;
+}
+div.footer>div.promise>div{
+    width: 297px;
+}
+div.footer>div.promise>div>img{
+    width: 100%;
+}
+/* 底部信息 */
+div.footer>div.infos{
+    margin:0 auto;
+    width: 1188px;
+}
+div.footer>div.infos>div.info1{
+    float:left;
+}
+div.footer>div.infos>div>ul{
+    list-style: none;
+}
+div.footer>div.infos>div>ul>li>p{
+    font-size: 16px;
+}
+div.footer>div.infos>div>ul>li>a{
+    text-decoration: none;
+    color:#999;
+    font-size: 14px;
+}
+
+
