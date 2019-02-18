@@ -1,0 +1,10 @@
+body{
+    font-size:14px;
+    font-family: PingFangSC-Regular,"Microsoft YaHei",simsun,
+                 "Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+*{ margin:0;}
+/* 导航图片 */
+div.header>div{
+   /* width: ;*/
+}
