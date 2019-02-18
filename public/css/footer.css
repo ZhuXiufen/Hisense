@@ -1,8 +1,9 @@
 body{
     font-size:14px;
     font-family: PingFangSC-Regular,"Microsoft YaHei",simsun,
-                 "Helvetica Neue",Arial,Helvetica,sans-serif
+                 "Helvetica Neue",Arial,Helvetica,sans-serif;
 }
+*{ margin:0;}
 /* 承诺图片 */
 div.footer>div.promise{
     margin:0 auto;
@@ -21,6 +22,9 @@ div.footer>div.promise>div>img{
 div.footer>div.infos{
     margin:0 auto;
     width: 1188px;
+    margin-bottom:80px;
+    display: flex;
+    justify-content: space-between;
 }
 div.footer>div.infos>div.info1{
     float:left;
@@ -28,13 +32,68 @@ div.footer>div.infos>div.info1{
 div.footer>div.infos>div>ul{
     list-style: none;
 }
-div.footer>div.infos>div>ul>li>p{
+div.footer>div.infos>div>ul>li{
+    margin-top: 8px;
+}
+div.footer>div.infos>div>ul>li:first-child{
+    color: #262626;
     font-size: 16px;
+    margin:0px 0px 20px 0px;
+
 }
 div.footer>div.infos>div>ul>li>a{
     text-decoration: none;
     color:#999;
     font-size: 14px;
 }
-
+div.footer .infos .info2{
+    width:228px;
+    text-align:center;
+}
+div.footer .infos .info2 p{
+    color:#777;
+}
+div.footer .infos .info2 p:first-child{
+    color: #00aaa6;
+    font-size: 24px;
+}
+div.footer>.infos>.info2>div{ 
+    width:100px;
+    margin:0 auto;
+}
+div.footer .infos .info2>div img{ 
+    width:100%;
+}
+div.footer>div.record{
+    width:100%;
+    background: #3F3F3F;
+}
+div.footer>div.record>div{
+    width: 1188px;
+    height: 60px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+div.footer>div.record>div>div>div{
+    float:left;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+}
+div.footer>div.record>div>div>div img{
+    width: 100%;
+}
+div.footer>div.record>div>div>div a{
+    text-decoration: none;
+    color: #aaaaaa;
+}
+div.footer>div.record>div>div>div p:first-child{
+    padding-top:6px;
+    padding-bottom:4px;
+}
+div.footer>div.record>div>div>p{
+    color: #777777;
+    margin-top:7px;
+}
 
