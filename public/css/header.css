@@ -2,6 +2,7 @@ body{
     font-size:14px;
     font-family: PingFangSC-Regular,"Microsoft YaHei",simsun,
                  "Helvetica Neue",Arial,Helvetica,sans-serif;
+    box-sizing:border-box;
 }
 *{ 
    margin:0px;
@@ -12,6 +13,11 @@ ul{
    list-style: none;
 }
 /* 导航图片 */
+div.header{
+    width:100%;
+    min-width: 1188px;
+    position:relative;
+}
 div.header>img{
    width:100%;
    margin:0;
@@ -181,4 +187,39 @@ nav .search-logo>a{
 }
 nav .search-logo>a>img{
    margin-top:12px;
+}
+/* 下滑导航
+.nav-list-item{
+    position:relative;
+}*/
+.nav-list-item>.expand-category{
+    position:absolute;
+    width:100%;
+    height:288px;
+   /* margin-left:-960px;
+    left:-50%;  */
+    left:0;
+    background-color: #000;/*#f7f7f7;*/
+    box-shadow: 0 5px 5px rgba(0,0,0,.07);
+    border:1px solid green;
+}
+.expand-category>div{
+    padding: 12px 0;
+    margin: 0 auto;
+    width: 1188px;
+    border:1px solid red;
+}
+.expand-category-sm{
+    border: 0;
+    width: 800px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    /* zoom: 1; */
+    font-size: 12px;
+}
+.expand-category-lg{
+    display: block;
+    margin-top: -4px;
+    width: 364px;
 }

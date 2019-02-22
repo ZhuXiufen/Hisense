@@ -2,6 +2,7 @@ body{
     font-size:14px;
     font-family: PingFangSC-Regular,"Microsoft YaHei",simsun,
                  "Helvetica Neue",Arial,Helvetica,sans-serif;
+                 box-sizing:border-box;
 }
 *{ margin:0;}
 /* 承诺图片 */
