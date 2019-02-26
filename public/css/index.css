@@ -1,4 +1,4 @@
-/* 轮播图 */
+/* 顶部导航 */
 header>iframe{
     width: 100%;
     height: 112px;
@@ -7,6 +7,12 @@ header>iframe{
 header>iframe .topimg{
     width: 100%;
 }
+/* 底部信息 */
+footer>iframe{
+    width: 100%;
+    height: 455px;
+}
+/* 轮播图 */
 .carousel{
     height: 500px;
     position: relative;
@@ -85,5 +91,57 @@ header>iframe .topimg{
     border: 3px solid #fff;
     margin-top:0px;
 }
+/* 楼层 */
+/*频道专区*/
+.inner-channel{
+    vertical-align: baseline;
+}
+.channel{
+    width: 100%;
+    margin-top: 25px;
+    
+}
+.channel-title {
+    font-size: 22px;
+}
+/* 图片 */
+.channel-detail{
+    /* width: 288px; */
+    /* height: 388px; */
+    margin-top: 20px;
+    /* position: relative; */
+    overflow: hidden;
+   
+}
+.channel-detail::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.channel-detail>div{
+    /* position: absolute; */
+    width: 288px;
+    float: left;
+    transition: 0.2s ease-out;
+}
+.channel-detail>div:hover{
+    transform: translateY(-4px);
+}
+.channel-detail>div.details-1{
+    width: 588px;
+}
+.channel-detail>div.details-2{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.channel-detail>div.details-4{
+    margin-top: 10px;
+}
 
-
+.channel-detail>div>a{
+    display: block;
+    width: 100%;
+}
+.channel-detail>div>a>img{
+    width: 100%;
+}

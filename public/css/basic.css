@@ -14,3 +14,16 @@ a{
 ul{
    list-style: none;
 }
+.outside{
+    width: 100%;
+    /* height:50px; */
+    /* text-align: center; */
+    /* border:1px solid red; */
+}
+.inner{
+    width: 1188px;
+    /* height:40px; */
+    /* margin-bottom: 60px; */
+    margin: 0 auto;
+    /* border:1px solid red; */
+}
