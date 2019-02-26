@@ -92,17 +92,21 @@ footer>iframe{
     margin-top:0px;
 }
 /* 楼层 */
-/*频道专区*/
-.inner-channel{
-    vertical-align: baseline;
+/*f0 频道专区*/
+.channel::after,.floor::after{
+    content: '';
+    display: block;
+    clear: both;
 }
-.channel{
-    width: 100%;
-    margin-top: 25px;
-    
+.floor::after{
+    content: '';
+    display: block;
+    clear: both;
 }
-.channel-title {
+.channel-title,.floor-title {
     font-size: 22px;
+    margin-top: 25px;
+    float: left;
 }
 /* 图片 */
 .channel-detail{
@@ -120,21 +124,29 @@ footer>iframe{
 }
 .channel-detail>div{
     /* position: absolute; */
-    width: 288px;
-    float: left;
-    transition: 0.2s ease-out;
+    /* float: left;
+    transition: 0.2s ease-out; */
 }
 .channel-detail>div:hover{
     transform: translateY(-4px);
 }
-.channel-detail>div.details-1{
+.channel-detail>.details-1{
     width: 588px;
+    float: left;
+    transition: 0.2s ease-out;
 }
-.channel-detail>div.details-2{
+
+.channel-detail>.details-2,.channel-detail>.details-3,.channel-detail>.details-4{
+    width: 288px;
+    float: left;
+    transition: 0.2s ease-out;
+
+}
+.channel-detail>.details-2{
     margin-right: 10px;
     margin-left: 10px;
 }
-.channel-detail>div.details-4{
+.channel-detail>.details-4{
     margin-top: 10px;
 }
 
@@ -144,4 +156,69 @@ footer>iframe{
 }
 .channel-detail>div>a>img{
     width: 100%;
+}
+/* f1 激光电视 */
+.floor-more{
+    float: right;
+    font-size: 14px;
+    width: 88px;
+    margin-top: 25px;
+    /* vertical-align:  baseline; */
+
+}
+.floor-more>a{
+    display: inline-block;
+    color: #aaaaaa;
+}
+.f1 .details-1{
+    width: 228px;
+}
+.product-details>ul{
+
+}
+.product-details>ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.product-details>ul>li{
+    float: left;
+    margin-left: 12px;
+    width: 228px;
+    height: 300px;
+    background: #fff;
+    /* 边框阴影 */
+}
+.product-details>ul>li:nth-child(4){
+    margin-bottom: 12px;
+}
+.product-content{
+    width: 100%;
+}
+.product-details>ul>li img{
+    width: 212px;
+    height: 212px;
+}
+.product-content p{
+    overflow: hidden;
+    text-align: center;
+}
+.product-content .product-title{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    height: 20px;
+    color: #1e1e1e;
+}
+.product-content .product-moredetail{
+    font-size: 12px;
+    color: #777;
+    height: 24px;
+    line-height: 24px;
+}
+.product-content .product-price{
+    font-size: 12px;
+    color: #cc0010;
+    line-height: 20px;
+    height: 20px;
 }
