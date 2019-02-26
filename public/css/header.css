@@ -5,17 +5,12 @@ div.header{
     min-width: 1188px;
     position:relative;
 }
-div.header>img{
-   width:100%;
-   margin:0;
-   padding:0;
-}
 div.header>div.lt-nav{
    width:100%;
    color: #ccc;
    background: #444;
    height: 36px;
-   margin-top:-4px;
+   /* margin-top:-4px; */
 }
 div.header>div.lt-nav>div{
    margin:0 auto;
@@ -127,6 +122,9 @@ div.lt-nav ul>li>ul.web-nav-ul>li ul>li>a:hover{
     
 }
 /* nav导航 */
+nav{
+    padding-top: 12px;
+}
 nav>div{
    width:1188px;
    height: 64px;
