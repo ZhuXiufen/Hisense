@@ -126,6 +126,7 @@ footer>iframe{
 .channel-detail>.details-1{
     width: 588px;
     float: left;
+    overflow: hidden;
 }
 /* 向上移动动画 */
 .moveup{
@@ -171,9 +172,6 @@ footer>iframe{
 .f1 .details-1{
     width: 228px;
 }
-.product-details>ul{
-
-}
 .product-details>ul::after{
     content: '';
     display: block;
@@ -185,10 +183,11 @@ footer>iframe{
     width: 228px;
     height: 300px;
     background: #fff;
+    margin-bottom: 12px;
     /* 边框阴影 */
 }
 .product-details>ul>li:nth-child(4){
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
 }
 .product-content{
     width: 100%;
@@ -197,7 +196,7 @@ footer>iframe{
     width: 212px;
     height: 212px;
 }
-.product-content p{
+.product-content .product-title,.product-content .product-moredetail,.product-content .product-price{
     width: 212px;
     margin: 0 auto;
     overflow: hidden;   
@@ -226,7 +225,81 @@ footer>iframe{
     line-height: 20px;
     height: 20px;
 }
-/* 边框阴影 */
-.shadow:hover{
-    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+
+/* 选购攻略 */
+.product{
+    margin-top: 20px;
+    margin-left:-12px;
 }
+.product::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.product-item{
+    height: 324px;
+    width: 388px;
+    background: #fff;
+    float: left;
+    margin-left: 12px;
+    text-align: center;
+    margin-bottom: 12px;
+    transition: all .2s linear;
+    overflow: hidden;
+}
+.product-item>a{
+    display: block;
+    width: 100%;
+}
+.item-img{
+    width: 100%;
+}
+.product .product-content{
+    background: #fff;
+    box-sizing: border-box;
+    padding: 24px 16px;
+    text-align: left;
+    width: 100%;
+    min-height: 108px;
+    transition: all 250ms ease;
+}
+
+ .product .product-title,.product .product-moredetail{
+    text-align: left;
+    margin:0;
+} 
+
+.product .product-title{
+    font-size: 12px;
+    color: #62c1d5;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+.product .product-moredetail{
+    font-size: 16px;
+    color: #262626;
+    margin-bottom: 4px;
+    font-weight: 700;
+    line-height: 22px;
+    height: 22px;
+}
+/* 官方咨训 */
+.product .product-desc{
+    opacity: 0;
+    /* height: 0; */
+    line-height: 20px;
+    margin-top: 12px;
+    text-align: left;
+    font-size: 14px;
+    color: #777;
+}
+/* .product .product-desc:hover{
+    /* opacity: 1; */
+    /* height:  */
+/* }
+.f9 .product-item>a{
+    position: relative;
+}
+.f9 .product-content{
+    position: absolute;
+} */ 
