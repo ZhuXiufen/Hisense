@@ -1,4 +1,7 @@
 /* 顶部导航 */
+header{
+    text-align: center;
+}
 header>iframe{
     width: 100%;
     height: 112px;
@@ -16,16 +19,24 @@ footer>iframe{
 .carousel{
     height: 500px;
     position: relative;
+    background: #F7F7F7;
 }
-.carousel-list::after{
+.carousel-list{
+    width: 100%;
+}
+/* .carousel-list::after{
     content: '';
     display: block;
     clear: both;
-}
+} */
 .carousel-items{
+   /* margin-left:-50%; */
     position: absolute;
+    left:50%;
+    transform: translate(-50%);
     top: 0;
     z-index: 0;
+    
 }
 .carousel-items a{
     width: 100%;
@@ -46,13 +57,13 @@ footer>iframe{
     /* display: none; */
 }
 .arrow>.arrow-left{
-    background:  rgba(11,16,16,0.2) url('../img/arrow-left.png') no-repeat center center;
-    background-size:40% 40%;
+    background:  rgba(11,16,16,0.2) url('../img/icon_arrow_left_thin.png') no-repeat center center;
+    /* background-size:50% 50%; */
     left: 0;
 }
 .arrow>.arrow-right{
-    background:  rgba(11,16,16,0.2) url('../img/arrow-right.png') no-repeat center center;
-    background-size:40% 40%;
+    background:  rgba(11,16,16,0.2) url('../img/icon_arrow_right_thin.png') no-repeat center center;
+    /* background-size:40% 40%; */
     right: 0;
 }
 /* 指针 */
@@ -220,7 +231,7 @@ footer>iframe{
     
 }
 .product-content .product-price{
-    font-size: 12px;
+    font-size: 16px;
     color: #cc0010;
     line-height: 20px;
     height: 20px;
@@ -303,3 +314,50 @@ footer>iframe{
 .f9 .product-content{
     position: absolute;
 } */ 
+/* f10 */
+/* 视频 */
+.item-video{
+    width: 100%;
+    height: 218;
+    text-align: center;
+}
+.play-btn{
+    width: 36px;
+    height: 36px;
+    position:absolute;
+    left: 20px;
+    bottom: 124px;
+}
+.f10 .product-item{
+    position: relative;
+}
+/* 字体 */
+
+.f10 .product-content .product-moredetail,.f10 .product-content .product-desc{
+    text-align: center;
+    margin: 0 auto;
+}
+.f10 .product-desc{
+    opacity: 1;
+}
+
+/* 服务 */
+.service{
+    width: 100%;
+    margin-top: 20px;
+}
+.service::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.service>li{
+    float:left;
+    width: 288px;
+}
+.service>li+li{
+    margin-left: 12px;
+}
+.service>li img{
+    width: 100%;
+}
