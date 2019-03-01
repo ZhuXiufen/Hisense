@@ -1,25 +1,63 @@
-/* 顶部导航 */
+/* 顶部导航 
 header{
     text-align: center;
 }
 header>iframe{
     width: 100%;
-    height: 112px;
+    height: 232px;
     margin-top:-4px;
 }
-header>iframe .topimg{
-    width: 100%;
-}
-/* 底部信息 */
+
+/* 底部信息 *
 footer>iframe{
     width: 100%;
     height: 455px;
 }
+/* 右侧悬浮栏 */
+aside{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    padding: 0 7px;
+    background-color: #fff; 
+}
+.enter-item{
+    height: 64px;
+    width: 50px;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.enter-item:first-child{
+    border-top: none;
+}
+.enter-item>a{
+    display: inline-block;
+    vertical-align: middle;
+    /* zoom: 1; */
+    width: 100%;
+    color: #646464;
+    text-align: center;
+}
+.enter-item>a>img{
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px
+}
+.enter-font{
+    font-size: 8px;
+
+}
+
 /* 轮播图 */
 .carousel{
     height: 500px;
     position: relative;
     background: #F7F7F7;
+    top: -5px;
 }
 .carousel-list{
     width: 100%;
