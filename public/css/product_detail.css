@@ -247,3 +247,56 @@
     margin-right: 2px;
     vertical-align: text-bottom;
 }
+.item-arrow{
+    text-align: right;
+    width: 60px;
+    position: absolute;
+    right:16px;
+    top: 20px;
+}
+.service-box{
+    box-sizing: border-box;
+    position: absolute;
+    width: 600px;
+    max-height: 400px;
+    right: 0;
+    top: 50px;
+    box-shadow: 0 2px 16px 0 rgba(38,38,38,.08);
+    border-radius: 2px;
+    background: #fff;
+    padding: 20px;
+    overflow-y: auto;
+    display: none;/* 点击时显示*/
+}
+.service-box>ul>li>p{
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #1e1e1e;
+    font-weight: 400;
+    margin: 12px 0 6px;
+}
+.service-box>ul>li>div{
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #646464;
+    line-height: 1.8;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+}
+.address-box{
+    box-sizing: border-box;
+    margin: 16px 0;
+    display: flex;
+    height: auto;
+    width: 100%;
+    background: #f7f7f7;
+    padding: 16px 16px 14px 0;
+}
+.address-box>div:first-child{
+    width: 44px;
+    text-align: center;
+}
+.item-skus{
+    margin-top: 20px;
+    position: relative;
+}
