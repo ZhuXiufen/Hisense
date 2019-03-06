@@ -1,6 +1,5 @@
 .product{
     width: 100%;
-
 }
 .product-wrapper{
     position: relative;
@@ -428,11 +427,11 @@
 .tab-nav-item.active>a{
     color:#262626;
 }
-/*图片详情 */
-.tab-content>p{
+/*图片详情 */  /*  服务*/
+.tab-content>p,.service-imgs>p{
     text-align: center;
 }
-.tab-content>p>img{
+.tab-content>p>img,.service-imgs>p>img{
     display: inline-block;
     vertical-align: middle;
 }
@@ -480,5 +479,174 @@
     margin-left: 104px;
 }
 .buyer-comment{
-    
+    padding: 8px 0;
+}
+.comments-header{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.comment-user-name{
+    font-size: 18px;
+    color: #1e1e1e;
+    line-height: 24px;
+    display: inline-block;
+    height: 24px;
+}
+.comment-score{
+    font-size: 22px;
+    color: #FF143E;
+}
+/* 评论时间 */
+.comment-date{
+    color: #999;
+    line-height: 12px;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+/* 评论内容 */
+.comment-context{
+    margin: 0 4px 0 0;
+    font-size: 16px;
+    color: #1e1e1e;
+}
+/* 官方回复 */
+.admin-comment{
+    padding: 8px 0;
+    box-sizing: border-box;
+    display: flex;
+}
+.admin-icon{
+    width: 60px;
+}
+.admin-reply{
+    color: #00aaa6;
+    font-size: 14px;
+}
+.label{
+    margin-bottom: 4px;
+}
+.reply-context{
+    color: #1e1e1e;
+}
+/* 分页 */
+.pagination{
+    margin-right: 156px;
+    float: right;
+    margin-top: 10px;
+    /* text-align: center;
+    display: inline-block;
+    vertical-align: middle; */
+}
+.pagination>span,.pagination>input{
+    color: #ddd;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 6px 11px;
+    height: 32px;
+}
+.pagination>input{
+    width: 36px;
+    height: 32px;
+    margin-left: 10px;
+    text-align: center;
+}
+.pagination>button{
+    height: 32px;
+    padding: 9px 7px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #fff;
+    color: #666;
+    margin-left: 10px;
+}
+.pagination>.current{
+    color: #fff;
+    background-color: #00aaa6;
+    border: 1px solid #00aaa6;
+    position: relative;
+}
+/*  包装及参数*/
+.attribute-list{
+    box-sizing: content-box;
+    padding: 20px;
+}
+/* 商家提示 */
+.user-tip{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 129px;
+    font-size: 16px;
+    color: #1e1e1e;
+    line-height: 28px;
+    margin: 0 60px;
+}
+.tip-img{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    /* flex-grow: 1; */
+    flex-shrink: 0;
+}
+.tip-content{
+    width: auto;
+    font-size: 16px;
+    color: #1e1e1e;
+    line-height: 28px;
+}
+/* 详细参数 */
+.attr-group{
+    border-top: 1px solid #ddd;
+    padding: 36px 0;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 60px;
+}
+.attr-group-title{
+    width: 290px;
+    padding-right: 40px;
+    font-size: 24px;
+    color: #1e1e1e;
+    line-height: 18px;
+}
+.attr-group-item{
+    font-size: 16px;
+    color: #646464;
+    line-height: 18px;
+}
+.attr-group-item:not(:first-child){
+    margin-top: 16px;
+}
+.attr-group-item-title{
+    font-weight: 500;
+    color: #1e1e1e;
+    line-height: 18px;
+}
+.attr-group-item-value{
+    line-height: 18px;
+}
+/* 服务 同 图片详情 */
+.pull-right{
+    line-height: 64px;
+    margin-right: 0;
+    float: right;
+}
+.pull-right>button{
+    padding: 13px 16px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    vertical-align: baseline;
+    background: #d9161c;
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 400;
+    border: 1px solid transparent;
 }

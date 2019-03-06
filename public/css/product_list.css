@@ -1,0 +1,194 @@
+header>iframe{
+    height: 231px;
+}
+/* 外层包裹 */
+.outside::before{
+    content: '';
+    display: table;
+}
+.inside{
+    width: 1200px;
+    margin: 24px auto 60px;
+}
+.inside::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* 左侧 */
+.left{
+    float: left;
+    background: #fff;
+    margin-right: 12px;
+
+}
+.search-side{
+    width: 228px;
+    padding: 20px 0 20px 20px;
+    text-align: left;
+
+}
+.filter-cat-section{
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+/* 品牌 */
+.filter-cat-title{
+    font-weight: 800;
+    font-size: 14px;
+    color: #262626;
+    text-align: left;
+    line-height: 20px;
+}
+.filter-brand{
+    background: #f5f5f5;
+    font-size: 12px;
+    color: #262626;
+    line-height: 32px;
+    width: 90px;
+    height: 32px;
+    text-align: center;
+    margin: 8px 8px 0 0;
+    overflow: hidden;
+    cursor: pointer;
+
+    display: inline-block;
+}
+/* 价格 */
+.filter-price{
+    padding: 5px 0;
+}
+.filter-price>input{
+    width: 71.5px;
+    height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 8px 12px;
+    line-height: 12px;
+    font-size: 12px;
+}
+.filter-price>span{
+    line-height: 32px;
+    padding: 0;
+    width: 24px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+.operations{
+    margin-top: 8px;
+}
+.operations>button{
+    font-size: 12px;
+    
+    line-height: 32px;
+    padding: 0 8px;
+    border-radius: 2px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.sure{
+    color: #fff;
+    background: #00aaa6;
+    border-color: transparent;
+}
+.cancel{
+    background: #fff;
+    border: 1px solid #eee;
+    color: #777;
+}
+/*  */
+/* 右侧 */
+.right{
+    float: left;
+    
+}
+.right>div{
+    position: relative;
+}
+.filter-shop-search-filter{
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    width: 948px;
+}
+/* 视图转换 */
+.display-change{
+    float: right;
+    /* display: inline-block; */
+    text-align: left;
+}
+.display-4,.display-2{
+    display: inline-block;
+    width: 16px;
+    height: 40px;
+    margin-right: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.display-4{
+    background-image: url('../img/display-4-before.png');
+
+}
+.display-4.active{
+    background-image: url('../img/display-4-after.png');
+}
+.display-2{
+    background-image: url('../img/display-2-before.png');
+}
+.display-2.active{
+    background-image: url('../img/display-2-after.png');
+}
+/* 筛选条件 */
+.filter-banner{
+    float: right;
+    font-size: 14px;
+    color: #262626;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+}
+.item-sort{
+    display: inline-block;
+    width: 68px;
+    text-align: left;
+    line-height: 38px;
+    cursor: pointer;
+}
+/* 配送城市 */
+.hisense-filter{
+    position: absolute;
+    top: 0;
+    width: 380px;
+    padding: 0 10px;
+    color: #646464;
+}
+.delivery-area{
+    /* display: inline-block; */
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    height: 40px;
+    padding-top: 8px;
+}
+.delivery-area>span{
+    font-size: 14px;
+    color: #aaa;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.select-group{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.select-icon{
+    width: 16px;
+    height: 32px;
+    background-image: url('../img/arr-down.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.checkbox-container{
+
+}

@@ -14,6 +14,9 @@ footer>iframe{
     height: 455px;
 }
 /* 右侧悬浮栏 */
+header>iframe{
+    height: 232px;
+}
 aside{
     position: fixed;
     right: 0;
@@ -134,9 +137,9 @@ aside{
 }
 .indicators-item.active{
     background: 0 0;
-    /* margin: 0 5px;
+    /* margin: 0 5px;*/
     width: 14px;
-    height: 14px; */
+    height: 14px; 
     border: 3px solid #fff;
     margin-top:0px;
 }

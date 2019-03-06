@@ -187,8 +187,12 @@
                 <li class='tab-nav-item'>
                     <a href="javascript:;">服务</a>
                 </li>
+                <li class='pull-right display-none'>
+                    <button>立即购买</button>
+                </li>
             </ul>
-            <div class='tab-content' style='display:none;'>
+            <!-- 图片详情 -->
+            <div class='tab-content ' >
                 <p>
                     <img src="../img/all-det-1.jpg">
                 </p>
@@ -235,7 +239,8 @@
                     <br>
                 </p>
             </div>
-            <div class='tab-content'>
+            <!-- 商品评价 -->
+            <div class='tab-content display-none'>
                 <div class='comment-header'>
                     <div>好评度</div>
                     <div>100%</div>
@@ -247,36 +252,331 @@
                         </div>
                         <div class='comments-info'>
                             <div class='buyer-comment'>
-                                
+                                <div class='comments-header'>
+                                    <div class='comment-user-name'>  s***n</div>
+                                    <div class='comment-score'>★★★★★</div>
+                                </div>
+                                <div class="comment-date">
+                                    2018-10-31 18:20:39
+                                </div>
+                                <div class='comment-context'>
+                                    激光电视，普罗大众大都还没多少认识，前卫老板勇于尝鲜，体验感觉很美妙，很满意。选择正确。
+                                </div>
+                                <br>
                             </div>
-                            <div class='admin-comment'></div>
+                            <div class='admin-comment'>
+                                <div class='admin-icon'>
+                                    <img src="../img/admin-icon.png">
+                                </div>
+                                <div class='admin-reply'>
+                                    <div class='label'>官方回复：</div>
+                                    <div class='reply-context'>面朝大海发现海之美，仰望蓝天发现天之蓝；看到80L5应该才能感受激光电视的美妙，海信电视带您进入这个美妙的世界~感谢您对海信的支持~『权威官网，汇聚精品』</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='comments-li'>
+                        <div class='comments-user'>
+                            <img src="../img/comment-user.jpg">
+                        </div>
+                        <div class='comments-info'>
+                            <div class='buyer-comment'>
+                                <div class='comments-header'>
+                                    <div class='comment-user-name'>  z***m</div>
+                                    <div class='comment-score'>★★★★★</div>
+                                </div>
+                                <div class="comment-date">
+                                        2018-11-23 15:11:27
+                                </div>
+                                <div class='comment-context'>
+                                    不错
+                                </div>
+                                <br>
+                            </div>
+                            <div class='admin-comment' style='display:none'>
+                                <div class='admin-icon'>
+                                    <img src="../img/admin-icon.png">
+                                </div>
+                                <div class='admin-reply'>
+                                    <div class='label'>官方回复：</div>
+                                    <div class='reply-context'>面朝大海发现海之美，仰望蓝天发现天之蓝；看到80L5应该才能感受激光电视的美妙，海信电视带您进入这个美妙的世界~感谢您对海信的支持~『权威官网，汇聚精品』</div>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
+                <div class="pagination">
+                    共10条：
+                    <span>&lt;</span><span class='current'>1</span><span>&gt;</span>
+                    <input type="text" name='go-to'>
+                    <button>Go</button>
+                </div>
+            </div>
+            <!-- 包装及参数 -->
+            <div class='attribute-list display-none'>
+                <div class='user-tip'>
+                    <div class='tip-img'>
+                        <img src="../img/tip-icon.png">
+                    </div>
+                    <div class='tip-content'>
+                        <strong>温馨提示：</strong>
+                        因厂家技术不断更新，商城在售产品的包装、产地、性能参数和配件等信息不定期变更，商品详情仅供参考，请您以实物为准。如有疑问，请咨询在线客服，给您带来不便，敬请谅解！
+                    </div>
+                </div>
+                <div class='attr-group'>
+                    <div class='attr-group-title'>普通信息</div>
+                    <ul class='attr-group-content'>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>整机功率 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 250W</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>系列 :&nbsp;&nbsp; </span>
+                            <span class='attr-group-item-value'> L5</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>型号 :&nbsp;&nbsp; </span>
+                            <span class='attr-group-item-value'> 80L5</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>尺寸 :&nbsp;&nbsp; </span>
+                            <span class='attr-group-item-value'> 80</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='attr-group'>
+                    <div class='attr-group-title'>产品尺寸（mm)</div>
+                    <ul class='attr-group-content'>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>产品尺寸（mm) :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 547x346x158</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='attr-group'>
+                    <div class='attr-group-title'>硬件</div>
+                    <ul class='attr-group-content'>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>机芯型号 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> MSD6A838</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>CPU :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> MSD6A838</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>GPU :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> MaliT820MP2</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>存储（ROM) :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 32G</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>内存（RAM) :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 3G</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='attr-group'>
+                    <div class='attr-group-title'>网络连接</div>
+                    <ul class='attr-group-content'>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>网络 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 有</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>蓝牙 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 蓝牙4.0</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>连接方式 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 无线/网口</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='attr-group'>
+                    <div class='attr-group-title'>机身接口</div>
+                    <ul class='attr-group-content'>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>输入 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 射频输入RF；视频输入*1；HDMI 2.0*3；USB3.0*1；USB2.0x1, RS232*1；网口*1；同轴*1；售后服务接口*2</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>输出 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 同轴输出</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='attr-group'>
+                    <div class='attr-group-title'>信号规格</div>
+                    <ul class='attr-group-content'>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>USB支持视频格式 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> .avi .mpg .ts.mkv .mov.mp4 .rm.flv .rmvb</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>USB支持图片格式 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> JPEG/JPG</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>USB支持音频格式 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> MP3</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='attr-group'>
+                    <div class='attr-group-title'>音频参数</div>
+                    <ul class='attr-group-content'>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>音频解码 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'>Dolby MS12V2, DTS-HD</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>音频模式 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'>五段均衡器</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>音效处理 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'>DTS Studio Sound、Dolby Atmos</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>扬声器数量 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'>（中音+高音）*2，4个扬声器</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='attr-group'>
+                    <div class='attr-group-title'>屏幕</div>
+                    <ul class='attr-group-content'>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>背光源 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 激光</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>分辨率 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 3840*2160</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='attr-group'>
+                    <div class='attr-group-title'>画质参数</div>
+                    <ul class='attr-group-content'>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>亮度 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 400nit</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>色域(BT709) :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 116%</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>MEMC :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 有</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>HDR :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 有</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>背光方式 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 蓝色激光</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='attr-group'>
+                    <div class='attr-group-title'>配件</div>
+                    <ul class='attr-group-content'>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>包装清单 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 随机附件：说明书、遥控器、天线隔离器、音视频转接线、电源线、HDMI线、遥控器充电线、海信屏幕</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>遥控器型号 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> CRF6A60</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='attr-group'>
+                    <div class='attr-group-title'>系统</div>
+                    <ul class='attr-group-content'>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>操作系统 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> Android6.0</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>操作界面 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> vidaa ai</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='attr-group'>
+                    <div class='attr-group-title'>内容资源
+                        </div>
+                    <ul class='attr-group-content'>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>牌照方 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 华数</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>内容方 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 华数</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='attr-group'>
+                    <div class='attr-group-title'>软件功能</div>
+                    <ul class='attr-group-content'>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>视频循坏播放 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 有</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>体感遥控 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 支持</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>体感游戏 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 支持</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>摄像头 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 支持</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>游戏手柄 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 支持</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>无线键鼠 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 支持</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>定时关机 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 有</span>
+                        </li>
+                        <li class='attr-group-item'>
+                            <span class='attr-group-item-title'>语音控制 :&nbsp;&nbsp;</span>
+                            <span class='attr-group-item-value'> 有</span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- 服务 -->
+            <div class='service-imgs display-none' >
+                <p>
+                    <img src="../img/service-1.png">
+                    <img src="../img/service-2.jpg">
+                    <img src="../img/service-3.jpg">
+                    <img src="../img/service-4.jpg">
+                    <img src="../img/service-5.jpg">
+                    <img src="../img/service-6.jpg">
+                </p>
+                <p><br><br></p>
             </div>
         </div>
     </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <footer>
         <iframe src="footer.html" frameborder="0" scrolling='no'></iframe>
     </footer>
