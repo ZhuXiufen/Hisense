@@ -60,7 +60,7 @@ aside{
     height: 500px;
     position: relative;
     background: #F7F7F7;
-    top: -5px;
+    /* top: -5px; */
 }
 .carousel-list{
     width: 100%;

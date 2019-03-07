@@ -49,6 +49,7 @@ li.dowload-app{
    position:relative;
    
 }
+/* 悬停下拉 app图片 */
 div.download-img {
    position:absolute;
    width: 124px;
@@ -59,7 +60,6 @@ div.download-img {
    box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
    border: none;
    left:-20%;
-   display:none;
 }
 div.download-img div{
    position:absolute;

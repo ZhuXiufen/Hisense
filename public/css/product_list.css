@@ -213,12 +213,16 @@ header>iframe{
 /* 商品列表 */
 .product_list{
     width: 948px;
-    height: 100px;
 }
 .product-list-items{
     padding-top: 22px;
     padding: 10px 0 0;
     width: 100%;
+}
+.product-list-items::after{
+    content: '';
+    display: block;
+    clear: both;
 }
 .list-item{
     position: relative;
@@ -319,4 +323,43 @@ header>iframe{
     margin-bottom: 6px;
     font-style: normal;
     text-align: center;
+}
+.list-pagination{
+    width: 100%;
+    text-align: right;
+}
+.pagination{
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+.icon-prev,.icon-next,.page-lt,.page-gt{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.icon-prev{
+    background-image: url('../img/arrow-prev.png');
+}
+.icon-next{
+    background-image: url('../img/arrow-next.png');
+}
+/* .page-lt,.page-gt{
+   display: inline-block; 
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: #fff;
+    vertical-align: middle;
+    text-align: center;
+} */
+.page-lt{
+    color: #fff;
+    background-color: #00aaa6;
 }
