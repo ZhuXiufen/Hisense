@@ -13,7 +13,7 @@ $(function(){
     function loop(i=0,next=1){
 
        timer=setInterval(()=>{
-            if(next>$carousel.length){
+            if(next>$carousel.length-1){
                 next=0;
             }
            //先设置自己的透明度为0，当前对应的指示器移除active 
@@ -41,7 +41,6 @@ $(function(){
             $carousel.css('opacity','0')
                 .eq(i).css('opacity','1');  
             //更新 i
-            
             //点击的图片，
             loop(i,i+1);  
             
@@ -111,7 +110,8 @@ $(function(){
         var src=$(this).find('video').attr('src');
         $('.play-top').removeClass('display-none')
             .find('video').attr({src});
-    })
+            document.querySelector('.play-top video').play();
+    });
 
     //5.点击小叉子关掉视频
     $('.play-top a').on('click',function(){
