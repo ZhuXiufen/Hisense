@@ -54,13 +54,49 @@ aside{
     font-size: 8px;
 
 }
+.item-hidden{
+    /* display: none; */
+    position: absolute;
+    padding: 16px 23px;
+    right: 75px;
+    top: 32px;
+    transform: translateY(28%);
+    color: #777;
+    z-index: 600;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,.08);
+}
+
+.item-title{
+    position: relative;
+    font-size: 12px;
+    line-height: 16px;
+}
+.item-title+div{
+    width: 100px;
+    height: 100px;
+}
+.item-title+div>img{
+    width: 100%;
+}
+.triangle{
+    position: absolute;
+    border: 10px solid transparent;
+    border-left-color: #fff;
+    top: 50%;
+    right: -20px;
+
+}
+
+
 
 /* 轮播图 */
 .carousel{
     height: 500px;
     position: relative;
     background: #F7F7F7;
-    /* top: -5px; */
+    top: -5px;
 }
 .carousel-list{
     width: 100%;
@@ -83,6 +119,7 @@ aside{
     width: 100%;
     height: 100%;
     display: block;
+    background: #F7F7F7;
 }
 /* 箭头 */
 .arrow{
@@ -249,12 +286,13 @@ aside{
     height: 212px;
 }
 .product-content .product-title,.product-content .product-moredetail,.product-content .product-price{
-    width: 212px;
+    width: 100%;
+    /* width: 212px; */
     margin: 0 auto;
     overflow: hidden;   
-    text-align: center;
-    text-overflow: ellipsis;/*文字显示不完全变省略号*/
-    white-space: nowrap;
+    /* text-align: center; */
+    /*text-overflow: ellipsis;文字显示不完全变省略号*/
+    /* white-space: nowrap; */
 }
 .product-content .product-title{
     font-size: 14px;
@@ -305,6 +343,11 @@ aside{
 }
 .item-img{
     width: 100%;
+    transition: all 250ms ease;
+}
+/* 鼠标悬停 */
+.img-trans{
+    transform: scale(1.05);
 }
 .product .product-content{
     background: #fff;
@@ -315,7 +358,10 @@ aside{
     min-height: 108px;
     transition: all 250ms ease;
 }
-
+/* 鼠标悬停 */
+.content-trans{
+    transform: translateY(-50px);
+}
  .product .product-title,.product .product-moredetail{
     text-align: left;
     margin:0;
@@ -401,4 +447,68 @@ aside{
 }
 .service>li img{
     width: 100%;
+}
+/* 视频点击播放 */
+.play-top{
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 38, 38, 0.9);
+    z-index: 500;
+    visibility: visible;
+}
+.play-position{
+    width: 853px;
+    height: 540px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.video-title{
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.video-title>a{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 15px;
+    color: rgb(117, 117, 117);
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    line-height: 26px;
+    background-color: rgb(245, 245, 245);
+    
+}
+.video-title>a:hover{
+    color: #fff;
+    background: #009EA1;
+}
+.video-container{
+    width: 100%;
+    max-width: 100%;
+    height: 0;
+    /* padding-top: 56.25%; */
+    vertical-align: top;
+    position: relative;
+    padding: 0;
+}
+.video-container>video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+
 }
