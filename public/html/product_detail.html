@@ -22,27 +22,44 @@
                 <div>
                     <img src="../img/pro-1-md.png" id='img-md'>
                     <a href="javascript:;" class='play-video'>
-                        <img src="../img/play-pc.png" class='play-pc-btn display-none'>
+                        <!-- <img src="../img/play-pc.png" class='play-pc-btn display-none'> -->
                         <!-- 视频 -->
                         <!-- <div></div> -->
                     </a>
-                    <div id="mask"></div>
-                    <div class="super-mask "></div>
-                    <div id='div-lg'></div>
+                    <div class="mask display-none"></div>
+                    <div class="super-mask"></div>
+                    <div class='div-lg display-none'></div>
                 </div>
                 <!-- 下方小图片 -->
                 <div class='carousel-wrap'>
-                    <ul class='carousel-list'>
-                        <li class='carousel-item'>
-                            <img src="../img/pro-det-1.png">
-                        </li>
-                        <li class='carousel-item'>
-                            <img src="../img/pro-det-2.png">
-                        </li>
-                        <li class='carousel-item'>
-                            <img src="../img/pro-det-3.png">
-                        </li>
-                    </ul>
+                    <div class='formove'>
+                        <ul class='carousel-list'>
+                            <li class='carousel-item'>
+                                <img src="../img/pro-det-1.png" >
+                            </li>
+                            <li class='carousel-item'>
+                                <img src="../img/pro-det-2.png">
+                            </li>
+                            <li class='carousel-item'>
+                                <img src="../img/pro-det-3.png">
+                            </li>
+                            <li class='carousel-item '>
+                                <img src="../img/pro-det-3.png">
+                            </li>
+                            <li class='carousel-item '>
+                                <img src="../img/pro-det-2.png">
+                            </li>
+                            <li class='carousel-item abc'>
+                                <img src="../img/pro-det-1.png">
+                            </li>
+                            <li class='carousel-item abc'>
+                                <img src="../img/pro-det-1.png">
+                            </li>
+                            <li class='carousel-item abc'>
+                                <img src="../img/pro-det-1.png">
+                            </li>
+                        </ul>
+                    </div>
                     <!-- 左右箭头 -->
                     <span class='arr-prev'></span>
                     <span class='arr-next'></span>
@@ -53,7 +70,7 @@
                     <!-- 分享 -->
                     <div class="share">
                         <img src="../img/pro-share.png" class="share-img">
-                        <div class='main-share'>
+                        <div class='main-share display-none'>
                             <a href="javascript:;" class='share-item'>
                                 <img src="../img/icon-wechat.png">
                                 <span>微信好友</span>
@@ -112,10 +129,10 @@
                             全国联保
                         </div>
                     </div>
-                    <div class='item-arrow'>
+                    <div class='item-arrow '>
                         <img src="../img/arr-down.png">
                     </div>
-                    <div class='service-box'>
+                    <div class='service-box display-none'>
                         <ul>
                             <li>
                                 <p>30天保价</p>
@@ -192,7 +209,8 @@
                 </li>
             </ul>
             <!-- 图片详情 -->
-            <div class='tab-content ' >
+            <div>
+            <div class='tab-sel tab-content ' >
                 <p>
                     <img src="../img/all-det-1.jpg">
                 </p>
@@ -236,11 +254,11 @@
                     <img src="../img/all-det-14.jpg">
                 </p>
                 <p>
-                    <br>
+                    <br><br>
                 </p>
             </div>
             <!-- 商品评价 -->
-            <div class='tab-content display-none'>
+            <div class='tab-sel tab-content display-none'>
                 <div class='comment-header'>
                     <div>好评度</div>
                     <div>100%</div>
@@ -313,7 +331,7 @@
                 </div>
             </div>
             <!-- 包装及参数 -->
-            <div class='attribute-list display-none'>
+            <div class='tab-sel attribute-list display-none'>
                 <div class='user-tip'>
                     <div class='tip-img'>
                         <img src="../img/tip-icon.png">
@@ -564,7 +582,7 @@
                 
             </div>
             <!-- 服务 -->
-            <div class='service-imgs display-none' >
+            <div class='tab-sel service-imgs display-none' >
                 <p>
                     <img src="../img/service-1.png">
                     <img src="../img/service-2.jpg">
@@ -574,12 +592,13 @@
                     <img src="../img/service-6.jpg">
                 </p>
                 <p><br><br></p>
-            </div>
+            </div></div>
         </div>
     </div>
     <footer>
         <iframe src="footer.html" frameborder="0" scrolling='no'></iframe>
     </footer>
+    <script src='../js/jquery-3.2.1.js'></script>
     <script src='../js/product_details.js'></script>
 </body>
 </html>

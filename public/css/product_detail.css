@@ -28,33 +28,31 @@
 .super-mask{
     width: 550px;
     height: 550px;
-    background: #aaa;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    top: 100px;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
+    background:transparent;
+    position: absolute;
+    top: 0px;
+    /*left: 50%;
+    top: 100px; */
+    /* border: 1px solid #ddd; */
     z-index: 2;
-    
-
 }
 /* 放大镜大图 */
-#div-lg{
-    background: #faa;
+.div-lg{
+    width: 550px;
+    height: 550px;
+    /* background-color: #f7f7f7; */
     left: 50%;
     top: 100px;
     position: fixed;
-    display: none;
+    z-index:  3;
 }
 /* 遮罩 */
-#mask{
-    width: 273px;
-    height: 273px;
+.mask{
+    width: 275px;
+    height: 275px;
     position: absolute;
     left: 0px;
     top: 275px;
-    /* display: none; */
     background-color: #f5f5f5;
     border: 1px solid #ddd;
     cursor: move;
@@ -76,15 +74,24 @@
 }
 .carousel-wrap{
     margin: 14px auto;
-    width: 476px;
+    width: 480px;
     position: relative;
+    /* overflow: hidden; */
 }
+.formove{
+    /* border: 1px solid red; */
+    position:relative;
+    overflow: hidden;
+}
+
+
 /* 下方小图片 */
 .carousel-list{
     overflow: hidden;
     height: 88px;
     margin: 10px 0 0;
     /* padding: 0; */
+    margin-left: 0px;
 }
 /* .carousel-list::after{
     content: '';
@@ -92,21 +99,27 @@
     clear: both;
 } */
 .carousel-item{
-    /* float: left; */
-    display: inline-block;
-
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px;
+    /* margin-left: 4px;
+    margin-right: 4px; */
+    /* display: inline-block; */
+    /* margin-left:-96px; */
+    
 }
+
 .carousel-item>img{
     box-sizing: border-box;
     width: 88px;
     height: 88px;
     border: 1px solid #ddd;
     cursor: pointer;
-    display: inline;
+    display: inline-block;
 }
-.carousel-item>img:active{
+ .carousel-item>img.active{
     border-color: #00AAA6;
-}
+} 
 /* 小箭头 */
 .arr-prev,.arr-next{
     position: absolute;
@@ -129,6 +142,9 @@
     background: url('../img/arrow-right.png') no-repeat center right; 
     background-size: 35% 45%;
     right: -30px;
+}
+.arr-prev.disabled,.arr-next.disabled{
+    cursor:default;
 }
 /* 右侧文字 */
 /* 分享 */
@@ -155,8 +171,7 @@
     padding: 48px 42px 48px;
     border-radius: 2px;
     box-shadow: 0 2px 16px 0 rgba(0,0,0,.08);
-    display: none;
-    /* display: flex; */
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -243,6 +258,7 @@
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
+    cursor: pointer;
 }
 .item-content>div{
     margin-right: 12px;
@@ -260,6 +276,7 @@
     position: absolute;
     right:16px;
     top: 20px;
+    cursor: pointer;
 }
 .service-box{
     box-sizing: border-box;
@@ -273,7 +290,8 @@
     background: #fff;
     padding: 20px;
     overflow-y: auto;
-    display: none;/* 点击时显示*/
+    z-index:2;
+    /* 点击时显示*/
 }
 .service-box>ul>li>p{
     box-sizing: border-box;
@@ -401,7 +419,7 @@
     display: table;
 }
 .components-tab{
-    min-height: 800px;
+    min-height: 650px;
     color: #646464;
     background: #fff;
 
