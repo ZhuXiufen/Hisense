@@ -140,7 +140,28 @@ $(function(){
         $(this).find('.item-hidden').toggleClass('display-none');
     })
 
+    // 8.屏幕滚动
+    window.onscroll=function(){
+        var scrollTop=document.body.scrollTop ||document.documentElement.scrollTop;
+        
+        if(scrollTop>400){
+            //移到中间
+            $('aside').css('bottom','188px');
+        }else{
+            $('aside').css('bottom','0px');
+        }
+        if(scrollTop>800){
+            $('aside li:last-child').removeClass('display-none');
+        }else{
+            $('aside li:last-child').addClass('display-none');
+        }
+    }
 
+    //9.回到顶部
+    // $('.toTop').on('click',function(e){
+    //     e.preventDefault();
+        
+    // })
 
 
 

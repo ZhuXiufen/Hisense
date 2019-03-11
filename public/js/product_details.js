@@ -78,25 +78,44 @@ $(function(){
         $('.service-box').toggleClass('display-none');
     })
 
+    //6.评论
+    
     //详情评论切换
     $('.tab-navs').on('click','li',function(){
+        // 获得当前点击的选项位置
         var i=$(this).index();
         $(this).addClass('active')
             .siblings().removeClass('active');
         $('.tab-sel').eq(i).removeClass('display-none')
             .siblings().addClass('display-none');
+       
     })
 
+    //评论详情滚动
+    //获得ul位置
+    var ulTop=$('.tab-navs').offset().top;
+    
+    window.onscroll=function(){
+        var scrollTop=document.body.scrollTop ||document.documentElement.scrollTop;
+        
+        if(scrollTop>ulTop){
+            // ul添加fff属性
+            $('.tab-navs').addClass('fff')
+            // 按钮移除隐藏
+                .find('.pull-right').removeClass('display-none');
+            // div移除隐藏
+            $('.for-fixed').removeClass('display-none');
+        }else{
+            $('.tab-navs').removeClass('fff')
+            // 按钮移除隐藏
+                .find('.pull-right').addClass('display-none');
+            // div移除隐藏
+            $('.for-fixed').addClass('display-none');
+        }
 
 
 
-
-
-
-
-
-
-
+    }
 
 
 
