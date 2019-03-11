@@ -81,6 +81,9 @@ $(function(){
     //6.评论
     
     //详情评论切换
+    //获得ul位置
+    var ulTop=$('.tab-navs').offset().top;
+
     $('.tab-navs').on('click','li',function(){
         // 获得当前点击的选项位置
         var i=$(this).index();
@@ -88,13 +91,11 @@ $(function(){
             .siblings().removeClass('active');
         $('.tab-sel').eq(i).removeClass('display-none')
             .siblings().addClass('display-none');
+        scrollTo(0,ulTop);
        
     })
 
     //评论详情滚动
-    //获得ul位置
-    var ulTop=$('.tab-navs').offset().top;
-    
     window.onscroll=function(){
         var scrollTop=document.body.scrollTop ||document.documentElement.scrollTop;
         
