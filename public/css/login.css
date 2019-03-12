@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header>div{
+    width: 1188px;
+    height: 100px;
+    margin: 0 auto;
+}
+header>div:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.header-logo{
+    width: 152px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 20px;
+    float: left;
+}
+.header-logo>a{
+    display: inline-block;
+    width: 100%;
+}
+.header-logo>a>img{
+    width: 100%;
+}
+.header-content{
+    width: 287.75px;
+    height: 50px;
+    margin-top: 30px;
+    float: left;
+}
+.header-content>span{
+    
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+}
+.content{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    /* margin-top: -60px; */
+    background: url('../img/login-bg.jpg') no-repeat center center;
+}
+.outer-login{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    text-align: right;
+}
+.component-login{
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    width: 384px;
+    position: relative;
+    margin-bottom: 60px;
+    padding: 0;
+    height: 522px;
+    background: #fff;
+}
+.tab-nav{
+    background: 0 0;
+    margin-top: 14px;
+    border: 0;
+    border-bottom: 1px solid #EEE;
+    list-style: none;
+}
+.tab-nav::after{
+    content: '';
+    display: table;
+    clear: both;
+
+}
+.nav-left,.nav-right{
+    float: left;
+    width: 50%;
+    margin-right: 0;
+    text-align: center;
+}
+/* .nav-right::after{
+    content: "";
+    display: table;
+} */
+/* .nav-left.active::after{
+    content: '';
+    display:table;
+    border-bottom: 3px solid #00aaa6;
+} */
+.nav-left.active>a,.nav-right.active>a{
+    color: #00aaa6;
+    position: relative;
+}
+.nav-left.active>a::after,.nav-right.active>a::after{
+    content: ' ';
+    border: 1px solid #00aaa6;
+    position: absolute;
+    height: 0;
+    left: 61px;
+    width: 72px;
+    bottom: -1px;
+}
+.nav-left>a,.nav-right>a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 64px;
+    font-size: 18px;
+    color: #AAA;
+    font-weight: 400;
+}
+.tab-contents{
+    padding: 60px 48px 0;
+    background-color: #fff;
+}
+form{
+    font-size: 14px;
+}
+/* 用户名 */
+.about-input{
+    position: relative;
+    width: 100%;
+    margin-bottom: 36px;
+    border: 0;
+    outline: none;
+}
+.about-input>.tips{
+    position: absolute;
+    opacity: .5;
+    font-size: 16px;
+    color: #262626;
+    line-height: 40px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+input{
+    outline: none;
+}
+.about-input>input{
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+    height: 40px;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #262626;
+}
+.err-info{
+    position: absolute;
+    left: 27px;
+    right: auto;
+    top: 45px;
+    color: #F26522;
+    font-size: 12px;
+    margin-left: -27px;
+    line-height: 16px;
+    padding-right: 7px;
+    vertical-align: baseline;
+}
+.choice{
+    position: relative;
+    width: 100%;
+    margin-bottom: 36px;
+    border: 0;
+    line-height: 14px;
+    margin-top: 24px;
+    padding-bottom: 0;
+    font-size: 12px;
+}
+.for-chb{
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 14px;
+    height: 14px;
+}
+.for-chb>input{
+    border-radius:50%;
+    vertical-align: middle;
+}
+.forget-password-a{
+    text-decoration: none;
+    color: #1e1e1e;
+    float: right;
+}
+.register-a{
+    text-decoration: none;
+    margin-left: 16px;
+    color: #00aaa6;
+    float:right;
+}
+
