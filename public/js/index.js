@@ -157,13 +157,50 @@ $(function(){
         }
     }
 
-    //9.回到顶部
-    // $('.toTop').on('click',function(e){
-    //     e.preventDefault();
-        
-    // })
+    //9.iframe 高度自适应
 
+    window.onload = function(){
+        // var obj = $('#newsMenu').contents().find('.news_list_item').outerHeight();
+        // console.log(obj);
+        //获取子页面的高度
+        function refresh(){
+            var childPageH = $('#ifa-header').contents().find('body').height();
+            $('#ifa-header').height(childPageH);
+            console.log(childPageH);
+        }
+        refresh();
+        setInterval(refresh,100)
+    }
+    /*
+    function reinitIframe(){
+        var iframe = document.getElementById("ifa-header");
+        try{
+            var bHeight = iframe.contentWindow.document.body.scrollHeight;
+            var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+            var height = Math.max(bHeight, dHeight);
+            iframe.height = height;
+            console.log(height);
+        }catch (ex){}
+    }
+    window.setInterval(reinitIframe(), 200);
+*/
+/**/
+    /*
+    <script type="text/javascript">
+    function reinitIframe(){
+    var iframe = document.getElementById("test");
+    try{
+    var bHeight = iframe.contentWindow.document.body.scrollHeight;
+    var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+    var height = Math.max(bHeight, dHeight);
+    iframe.height = height;
+    console.log(height);
+    }catch (ex){}
+    }
+    window.setInterval("reinitIframe()", 200);
+    </script>
 
+*/
 
 
 

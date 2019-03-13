@@ -14,9 +14,9 @@ footer>iframe{
     height: 455px;
 }
 /* 右侧悬浮栏 */
-header>iframe{
+/* header>iframe{
     height: 232px;
-}
+} */
 aside{
     position: fixed;
     right: 0;
@@ -88,8 +88,10 @@ aside{
     right: -20px;
 
 }
-
-
+/************************************************/
+body>.outside{
+    margin-top: -288px;
+}
 
 /* 轮播图 */
 .carousel{
@@ -97,6 +99,8 @@ aside{
     position: relative;
     background: #F7F7F7;
     top: -5px;
+    /*****************/
+    
     
 }
 .carousel-list{

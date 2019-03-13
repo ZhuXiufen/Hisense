@@ -216,6 +216,7 @@ nav .search-logo>a>img{
     left:0;
     background-color: #f7f7f7;
     box-shadow: 0 5px 5px rgba(0,0,0,.07);
+    z-index:500;
   
 }
 .expand-category>div{
@@ -299,4 +300,11 @@ nav .search-logo>a>img{
    font-size: 16px;
    line-height: 16px;
    color: #ff143e;
+}
+
+/***************************** */
+body::after{
+   content: '';
+   display:block;
+   height: 288px;
 }
