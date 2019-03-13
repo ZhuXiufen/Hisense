@@ -113,10 +113,20 @@ $(function(){
             // div移除隐藏
             $('.for-fixed').addClass('display-none');
         }
-
-
-
     }
+    //
+    //      window.onload = function(){
+    //     // var obj = $('#newsMenu').contents().find('.news_list_item').outerHeight();
+    //     // console.log(obj);
+    //     //获取子页面的高度
+    //     function refresh(){
+    //         var childPageH = $('#ifa-header').contents().find('body').height();
+    //         $('#ifa-header').height(childPageH);
+    //         console.log(childPageH);
+    //     }
+    //     refresh();
+    //     setInterval(refresh,100)
+    // }
 
 
 

@@ -303,8 +303,8 @@ nav .search-logo>a>img{
 }
 
 /***************************** */
-body::after{
+/* body::after{
    content: '';
    display:block;
    height: 288px;
-}
+} */

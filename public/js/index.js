@@ -171,6 +171,8 @@ $(function(){
         refresh();
         setInterval(refresh,100)
     }
+
+    //
     /*
     function reinitIframe(){
         var iframe = document.getElementById("ifa-header");

@@ -97,7 +97,10 @@ header>iframe{
     border: 1px solid #eee;
     color: #777;
 }
-/*  */
+/* 滚动后右侧固定样式 */
+.scroll-fixed{
+    position: fixed;
+}
 /* 右侧 */
 .right{
     float: left;
